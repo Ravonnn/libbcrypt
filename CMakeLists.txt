@@ -1,26 +1,8 @@
-###################################################################################
-#
-#  Copyright (c) 2014, webvariants GmbH, http://www.webvariants.de
-#
-#  This file is released under the terms of the MIT license. You can find the
-#  complete text in the attached LICENSE file or online at:
-#
-#  http://www.opensource.org/licenses/mit-license.php
-#
-#  @author: Tino Rusch (tino.rusch@webvariants.de)
-#
-###################################################################################
-
-cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.28)
 
 project(bcrypt)
 
 enable_language(ASM)
-
-set(MYLIB_VERSION_MAJOR 1)
-set(MYLIB_VERSION_MINOR 0)
-set(MYLIB_VERSION_PATCH 0)
-set(MYLIB_VERSION_STRING ${MYLIB_VERSION_MAJOR}.${MYLIB_VERSION_MINOR}.${MYLIB_VERSION_PATCH})
 
 # just doing cmake . will build a shared or static lib and honor existing environment setting
 # to force build static, cmake . -DBUILD_SHARED_LIBS=Off
